@@ -1,30 +1,18 @@
-//ECMAscript 5
-var textoVar = "texto var 1";
-
-//ECMAscript 6
-let textoLet = "texto let 1";
-const textoConst = "texto const 1";
-
-textoVar = "texto var 2";
-textoLet = "texto let 2";
-// textoConst = "texto const 2";
-
-var textoVar = "texto var 3";
-// let textoLet = "texto let 3";
-// const textoConst = "texto const 3";
-
-if (true){
-  textoVar = 5;
-  textoLet = 10;
-  //textoConst = 15;
-}
-
 const App = () => {
+  const miObjeto = {
+    nombre: "Michelle",
+    apPaterno: "Valencia",
+    apMaterno: "Lavalle",
+    edad: 22,
+  }
+
+  const atributo = "apPaterno";
+ 
   return (
     <div className="App">
-        <h1>{textoVar}</h1>
-        <h1>{textoLet}</h1>
-        <h1>{textoConst}</h1>
+      <h1>{`Mi nombre es ${
+        miObjeto.nombre} ${miObjeto.apPaterno} ${miObjeto.apMaterno} y tengo ${miObjeto.edad} años`}</h1>
+      <h1>{"Mi nombre es " + miObjeto.nombre+" "+miObjeto.apPaterno +" "+miObjeto.apMaterno+" y tengo "+miObjeto.edad+" años"}</h1>
     </div>
   );
 }
